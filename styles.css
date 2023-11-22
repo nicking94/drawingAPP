@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#paintingArea {
+    position: relative;
+    border: 8px solid #021572;
+    height: 70vh;
+    width: 100%;
+}
+
+.options {
+    height: 30vh;
+    background-color: #021572;
+    padding: 30px;
+}
+
+.tools-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.tools-row h5 {
+    margin-bottom: 2px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+    text-decoration-color: #2980b9;
+}
+
+
+.tools-row button {
+    padding: 15px 0;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+    color: #4161ff;
+    cursor: pointer;
+}
+
+
+.tools-row button:hover {
+    background-color: #dce1ff;
+}
+
+.boton.activo {
+    background-color: #2980b9;
+    color: white;
+}
+
+.boton.activo:hover {
+    background-color: #2980b9;
+}
+
+
+input[type="range"] {
+    height: 50px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 8px;
+    border: 3px solid #000;
+}
+
+input[type="color"]::moz-color-swatch {
+    border-radius: 8px;
+    border: 3px solid #000;
+}
+
+@media (max-width:768px) {
+
+    .options {
+        padding: 45px 20px;
+    }
+
+    .tools-row {
+        gap: 10px;
+    }
+
+    .tools-row h5 {
+        font-size: 3vw;
+    }
+
+    .tools-row button {
+        padding: 10px 0;
+        font-size: 3vw;
+    }
+
+    input[type="range"] {
+        width: 20vw;
+        height: 40px;
+    }
+
+    input[type="color"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        width: 12vw;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+    }
+}
